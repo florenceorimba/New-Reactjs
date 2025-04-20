@@ -1,8 +1,9 @@
 .app-wrapper {
-  min-height: 300px;
   background-color: white; /* soft blue-gray background */
-  display: flex;
-
+  gap: 16px;
   font-family: "Segoe UI", sans-serif;
-  padding: 2rem;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
