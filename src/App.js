@@ -67,7 +67,7 @@ function App() {
       <div className='bg-[lightblue] shadow-xl rounded-xl p-6 w-full flex flex-col'>
       <h1 className="text-2xl font-bold text-gray-800 mb-4">Part 4: State Management Helper</h1>
       <div className=" bg-blue-100 p-4 md:p-6 lg:p-10 flex flex-col rounded-lg shadow ">
-      <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl flex md:flex-col lg:flex-col sm:flex-col gap-6">
+      <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl flex flex-col gap-6">
         {/* Current State */}
         <div className="bg-blue-200 shadow-md rounded-xl p-4">
           <h2 className="text-lg md:text-xl font-semibold text-gray-700 mb-2">Current State</h2>
@@ -77,9 +77,9 @@ function App() {
         </div>
 
         {/* Logs */}
-        <div className="bg-blue-200 shadow-md rounded-xl p-4">
+        <div className="bg-blue-200 shadow-md rounded-xl p-4 h-[220px] overflow-y-auto">
           <h2 className="text-lg md:text-xl font-semibold text-gray-700 mb-2">State Logs</h2>
-          <ul className="list-disc pl-5 space-y-1 text-sm md:text-base text-gray-700">
+          <ul className="list-disc pl-5 space-y-1 text-sm md:text-base text-gray-700 overflow-y-auto">
             {log.map((entry, index) => (
               <li key={index}>{entry}</li>
             ))}
